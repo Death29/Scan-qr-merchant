@@ -66,9 +66,9 @@ class BaseChart : AppCompatActivity() {
             Log.d("entries Line", "list: $entries")
 
             val dataSet = LineDataSet(entries, "Data Month")
-            val dataChart = LineData(dataSet)
+            val dataChartLine = LineData(dataSet)
             lineChart.apply {
-                data = dataChart
+                data = dataChartLine
                 invalidate()
             }
 
