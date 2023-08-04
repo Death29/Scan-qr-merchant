@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.testindocyber.R
 import com.example.testindocyber.databinding.ActivityChooseFeatureBinding
+import com.example.testindocyber.screen.chart.BaseChart
 import com.example.testindocyber.screen.promo.MainActivity
 import com.example.testindocyber.screen.qr.HistoryPayment
 import com.example.testindocyber.screen.qr.HomeViewUser
@@ -37,6 +38,10 @@ class ChooseFeature : AppCompatActivity() {
 
             btnHistory.setOnClickListener {
                 startActivity(Intent(this@ChooseFeature, HistoryPayment::class.java))
+            }
+
+            btnChart.setOnClickListener {
+                startActivity(Intent(this@ChooseFeature, BaseChart::class.java))
             }
         }
     }
