@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.qr.DetailPayment">
+
+    <TextView
+        android:id="@+id/tvLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:text="@string/lbl_detail_payment"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:layout_marginVertical="10dp"/>
+
+    <TextView
+        android:id="@+id/lblSaving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="@string/lbl_saving"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLabel"/>
+
+    <TextView
+        android:id="@+id/tvSavings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintStart_toEndOf="@id/lblSaving"
+        app:layout_constraintTop_toTopOf="@id/lblSaving"
+        app:layout_constraintBottom_toBottomOf="@id/lblSaving"/>
+
+    <TextView
+        android:id="@+id/lblBank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="@string/lbl_bank_destination"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblSaving"/>
+
+    <TextView
+        android:id="@+id/tvValueBank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintStart_toEndOf="@id/lblBank"
+        app:layout_constraintTop_toTopOf="@id/lblBank"
+        app:layout_constraintBottom_toBottomOf="@id/lblBank"/>
+
+    <TextView
+        android:id="@+id/lblIdTrans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="@string/lbl_id_trans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblBank"/>
+
+    <TextView
+        android:id="@+id/tvValueId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintStart_toEndOf="@id/lblIdTrans"
+        app:layout_constraintTop_toTopOf="@id/lblIdTrans"
+        app:layout_constraintBottom_toBottomOf="@id/lblIdTrans"/>
+
+    <TextView
+        android:id="@+id/lblNameMerchant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="@string/lbl_merchant"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblIdTrans"/>
+
+    <TextView
+        android:id="@+id/tvValueMerchant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintStart_toEndOf="@id/lblNameMerchant"
+        app:layout_constraintTop_toTopOf="@id/lblNameMerchant"
+        app:layout_constraintBottom_toBottomOf="@id/lblNameMerchant"/>
+
+    <TextView
+        android:id="@+id/lblNominal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="@string/lbl_nominal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvValueMerchant"/>
+
+    <TextView
+        android:id="@+id/tvValueNominal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintStart_toEndOf="@id/lblNominal"
+        app:layout_constraintTop_toTopOf="@id/lblNominal"
+        app:layout_constraintBottom_toBottomOf="@id/lblNominal"/>
+
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintTop_toBottomOf="@id/lblNominal"
+        android:layout_marginHorizontal="10dp"
+        android:textAllCaps="false"
+        android:text="Bayar"/>
+
+    <TextView
+        android:id="@+id/tvFinalNominal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintTop_toBottomOf="@id/btnPay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
